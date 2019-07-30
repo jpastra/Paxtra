@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Viviana" >
+  <meta name="title" content="web paxtra portal"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1, IE=10" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="../css/index-layout.css" type="text/css" rel="stylesheet">
+  <link href="../css/animsition.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script type="text/javascript" src="../js/animsition.min.js"></script>
+  <script type="text/javascript" src="../js/selection.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <title>Paxtra - Freelancer Jessica Pastrana</title>
+</head>
+<body id="page-top">
+  <script>
+   $('body').css('display','none');
+   $(document).ready(function(){
+    $('body').fadeIn();
+
+    $('.clickme').click(function(event){
+      var thetarget = this.getAttribute('target');
+      if(thetarget != '_blank'){
+        var thehref = this.getAttribute('href');
+        event.preventDefault();
+        linkDestino = this.href;
+        $('body').fadeOut(2000,redireccionarPag);
+        $('.navigation').fadeOut(2000,redireccionarPag);
+        }
+     });
+
+       function redireccionarPag(){
+           window.location = linkDestino;
+       }
+  });
+  setTimeout(function(){
+    $('body').fadeIn();
+  },2000);
+ </script>
+  <div class="navigation">
+    <nav>
+      <img src="..\images\paxtra-logo.png" alt="logo" style="position: relative; width: 220px; height: auto; top: 25px !important; margin-left: 35px;">    	
+      <ul class="nav justify-content-end">
+        <li class="nav-item active">
+        	<a class="page-scroll homepageMenu" href="#page-top">HOME</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="aboutme">
+        	<a class="page-scroll" href="#section-acerca">ABOUT</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="experiencia">
+        	<a class="page-scroll" href="#section-experiencia">EXPERIENCE</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="portafolio">
+        	<a class="page-scroll" href="#section-portafolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="contacto">
+        	<a class="page-scroll" href="#section-contacto">CONTACT</a>
+        </li>
+        <li class="nav-item">
+        	<a class="phoneIcon"><i class="fa fa-phone"></i></a>
+        </li>
+        <li class="nav-item">
+        	<a class="shareAll"><i class="fa fa-share-alt"></i></a>
+        </li>
+        <li>
+          <a class="clickme" id="flagMex" href="../index.htm"><img src="../images/Mexico.png" alt="MexFlag"></i></a>        
+        </li>
+      </ul>
+    </nav>
+  </div>
+ <div>
+ <section id="top-section">
+   <div class="home_background_wrapper">
+   	  <img src="../images/codigo-imagen.jpg">
+      <h1 id="home_siteSlogan">Jessica Pastrana</h1>
+      <h2 id="home_siteSlogan_2">Freelancer</h2>
+      <p id="home_SecondSiteSlogan-en">Java/.Net Developer. Web Developer. Business Analyst.</p>   
+   </div> 
+  </section>
+ </div>
+ <div>
+   <div id="section-acerca"></div>
+   <section class="content-Abt">
+    <div id="title-Abt"><h2>About</h2></div>
+         <hr class="smallLine"/>
+           <p id="parag-Abt">I have more than 20 years of experience in the IT department. This web page has been made to introduce myself and as a presentation card.<br><br>I have worked in different positions like Business Analyst, System Analyst, Consultant, Freelance, Developer and Application Support.<br><br>Many times I’ve been in my customers, users, friends, relatives shoes and help them as soon as possible with issues with applications or technology using the knowledge that I’ve got regarding programming languages, support and technologies.</p>
+           <div class="separateImages"><img src="../images/la_mirada.jpg" alt="mirada"/></div>
+   </section> 
+ </div>
+ <div>
+ <div id="section-experiencia"></div>
+  <section id="content-skills">
+  	<h2>Experience</h2>
+  	 <hr class="smallLine"/>
+      <div class="container-items-en">
+         	<img class="item03" src="../images/webdesigner.jpg" style="width: 200px; height: 200px; border-radius: 150%">
+         	  <h4 class="item02">Java/.Net Development</h4>
+               <button type="button" onclick="location.href='experience-apps-en.htm'" class="btn btn-primary">MORE INFO</button>
+            <img class="item03" src="../images/webdeveloper.jpg" style="width: 200px; height: 200px; border-radius: 150px;">
+              <h4 class="item02">Web Development</h4>
+               <button type="button" onclick="location.href='experience-web-en.htm'" class="btn btn-primary">MORE INFO</button>
+         	<img class="item03" src="../images/uiuxexpert.png" style="width: 200px; height: 200px; border-radius: 150px;">
+              <h4 class="item02">Business Analyst</h4>
+               <button type="button" onclick="location.href='experience-ba-en.htm'" class="btn btn-primary">MORE INFO</button>
+     </div>
+  </section> 
+ </div>
+ <div>
+ <div id="section-portafolio"></div>
+  <section id="content-porta-en">
+    <h2 id="title-porta">Portfolio</h2>
+      <hr class="smallLine"/>
+        <p id="parag-porta-en">You can see in this section some of the projects that I've worked as Freelancer and in other cases some examples of what I've sone in some of the companies where I've been working.</p>
+         <div class="container-items-portafolio-en">
+         	<img src="../images/stand-alone-brand-logo.jpg" alt="app-escritorio" style="width: 350px; height: 150px">
+         	<button type="button" onclick="location.href='portafolio-apps-en.htm'" class="btn btn-primary">Java/.net Development</button>
+         	<img src="../images/portafolio-web-logo.jpg" alt="web-portafolio" style="width: 350px; height: 150px;">
+         	<button type="button" onclick="location.href='portafolio-web-en.htm'" class="btn btn-primary">Web Development</button>
+         </div>
+  </section> 
+ </div> 
+ <div>
+ <div id="section-contacto"></div>
+   <section class="content-contact">
+    <h2 id="title-contact">Contact</h2>
+      <hr class="smallLine"/>
+         <p id="parag-contact">Hi, If you want to put in contact with me, please do it through this form. Thanks!.</p>
+         <form method="post" action="../frmEmail.php" name="frmContacto" id="frmContacto" >
+            <div class="frmData">
+               <input type="text" value="Name" name="nombre" id="nombre" size="40" maxlength="40" onclick="SelectName()"><br><br>
+               <input type="telef" value="Phone" name="telefono" id="telefono" size="15" maxlength="10" pattern="[0-9]{10}" onclick="SelectPhone()" oninvalid="">
+               <input type="email" value="Email" name="emailDir" id="emailDir" size="20" onclick="SelectEmail()" required>
+               <br><br>
+               <input type="text" value="Subject" name="asunto" id="asunto" size="40" onclick="SelectAsunto()">
+               <br>
+               <br>
+               <textarea placeholder="Message" rows="5" cols="42" name="mensajetexto" id="mensajetexto" onclick="SelectMensaje()"></textarea>
+               <br><br>
+               <input type="reset" value="Clean" id="borrar" class="btn btn-primary" >
+               <input type="submit" value="Send" id="enviar" class="btn btn-primary" >
+           </div>
+         </form>
+   </section> 
+ </div>
+<footer id="pieDiv">
+  <div class="nav-footer">
+    <ul class="nav nav-content-center">
+        <li class="nav nav-item active">
+        	<a class="page-scroll" href="#page-top">Home</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="aboutme">
+        	<a class="page-scroll" href="#section-acerca">About</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="experiencia">
+        	<a class="page-scroll" href="#section-experiencia">Experience</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="portafolio">
+        	<a class="page-scroll" href="#section-portafolio">Portfolio</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="contacto">
+        	<a class="page-scroll" href="#section-contacto">Contact</a>
+        </li>
+      </ul>
+   </div>
+  <div>                        Copyright © 2019 All rights reserved - <span class="website-name-preview-helper">Jessica Pastrana - Freelancer</span></div>
+     <div class="clearfix upgrade-website-preview-helper">Powered By <a target="_blank" href="">PaXtra</ a> - <a target="_blank" href="">Create a website</a>
+     </div>
+</footer>
+<script>
+  $(document).ready(function(){
+     $("a").on('click', function(event){
+     	if(this.hash !== ""){
+     		event.preventDefault();
+     		var hash = this.hash;
+
+     		$('html, body').animate({
+     			scrollTop: $(hash).offset().top
+     		},900, function(){
+     			window.location.hash = hash;
+     		});
+     	}
+     });
+  });	
+	
+</script>
+<script>
+
+</script>
+</body>
+</html>

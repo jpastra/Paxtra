@@ -1,0 +1,38 @@
+.elemento_aninado{
+	animation-duration: 0.25;
+	transition-timing-function: ease-in;
+	animation-fill-mode: both;
+
+   .transicion--fadein{
+	  animation-name: fadeIn;
+    }
+}
+
+@keyframes fadeIn{
+   0%{opacity: 0;transform: translate3d(0,100%,0);}
+ 100%{opacity: 1;transform: none;}
+}
+
+@keyframes fadeInUp{
+0%{
+   opacity: 0;
+   transform: translate3d(0,100%,0);
+ }
+ 100%{
+    opacity: 1;
+    transform: none;
+ }
+}
+
+@keyframes fadeInRight{
+  0%{
+    opacity: 0;
+	transform: translate3d(100%,0,0);
+  }
+  
+  100%{
+	  opacity: 1;
+	  transform: none;
+  }
+
+}

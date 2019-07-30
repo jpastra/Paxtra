@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Viviana" >
+  <meta name="title" content="web paxtra portal"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1, IE=10" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="../css/portafolio-layout.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/funcionvideo.js"></script>
+  <script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+  <title>Paxtra - Freelancer Jessica Pastrana</title>
+</head>
+<body id="page-top">
+  <div class="navigation">
+    <nav>
+      <img src="..\images\paxtra-logo.png" alt="logo" style="position: relative; width: 220px; height: auto; top: 25px !important; margin-left: 35px;">    	
+      <ul class="nav justify-content-end">
+        <li class="nav-item active">
+        	<a class="page-scroll homepageMenu" href="index-en.htm">HOME</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="aboutme">
+        	<a class="page-scroll" href="index-en.htm#section-acerca">ABOUT</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="experiencia">
+        	<a class="page-scroll" href="index-en.htm#section-experiencia">EXPERIENCE</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="portafolio">
+        	<a class="page-scroll" href="index-en.htm#section-portafolio">PORTFOLIO</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="contacto">
+        	<a class="page-scroll" href="index-en.htm#contacto">CONTACT</a>
+        </li>
+        <li class="nav-item">
+        	<a class="phoneIcon"><i class="fa fa-phone"></i></a>
+        </li>
+        <li class="nav-item">
+        	<a class="shareAll"><i class="fa fa-share-alt"></i></a>
+        </li>
+        <li>
+          <a class="clickme" id="flagMex" href="../index.htm"><img src="../images/Mexico.png" alt="MexFlag"></i></a>        
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+ <section id="portafolio-app">
+   <div class="title-portafolio-app">
+    <h2>Portfolio Java/.Net</h2>
+    <hr class="smallLine"/>
+   </div> 
+   <div id="contenido-porta-app">
+     <h4><strong>System Consultant</strong></h4>
+     <p>In my position in <span style="color: orange"><strong>Conduent</strong></span> was as <span style="color:blue;"><strong>System Consult Sr</strong></span>.<br><br>Daily I had bunches of emails asking for reports that I have to populate through MSSQL server and I saw the oportunity to automate this, because the knowledge manager software was purched only a section and it was not considerate the reporting feature.  So I asked for the oportunity to make an app using Java as de programming language and Netbeans as IDE to make a Stand-Alone application for the users and allow to them run the program all the times they need it and populate their own reports. I have to make an analysis to delivery standars reports that the application is going to populate.
+     <br><br>I can only show the application, I put in black some sensible data that can not and it's not necessary to show in this web.
+     </p>
+   </div>
+      <div class="item-images-porta-app">
+            <img src="../images/conduent-java-app-1.jpg" alt="Menu Principal" style="width: 450px; height: 350px;">
+            <img src="../images/conduent-java-app-2.jpg" alt="Primer Reporte" style="width: 450px; height: 350px;">         
+            <img src="../images/conduent-java-app-3.jpg" alt="Barra Espaciadora" style="width: 450px; height: 350px;">
+            <img src="../images/netbeans-codigo-app.jpg" alt="Barra Espaciadora" style="width: 450px; height: 350px;">
+      </div>
+      <div class="titulos-images">
+         <span style="color: red;"><strong>Menu Principal</strong></span>
+         <span style="margin-left: 20px; color: green;"><strong>Reportes</strong></span>
+         <span style="color: orange;"><strong>Barra De Progreso</strong></span>
+         <span style="margin-left: 20px; color: blue"><strong>Netbeans</strong></span>
+      </div>
+     <hr class="divisionLine"/>	
+     <div id="contenido-porta-app-02">
+       <h4><strong>Freelance</strong></h4>
+       <p>It was given to me an opportunity as Freelance to work for a Clinic in Mexico, City.  All the work was going remotely.
+       <br><br>The application was to populate reports and there's only one option to make discounts to the patients.</strong>
+       <br><br>The database is <strong>Oracle 7</strong>, it was realy a challenge because the jdbc driver that Java 1.8 didn't allow me to connect to the database so it was neccesary use Java 1.7 because in this java version is still and it was the last java version where it was included the <span style="color: blue"><strong>ODBC</strong></span><br><br>I have to use this JDK because even it was setting up the server according the documentation, Java 1.8 didn't allow me to connect to the database sending error connectioons.<br><br>The outputs are to a JTable and can be exported an Excel and PDF files, or the user can print the reports directly to the printer.</p>
+    </div>
+      <div class="video-clinic-app">
+         <video id="myVideo" width="550" height="auto">
+             <source src="../video/SistemaClinicaCopyRight.mp4" type="video/mp4" />
+         </video>
+         <button onclick="playPause()" class="btn btn-primary">Play/Pause</button>
+         <button onclick="makeBig()" class="btn btn-primary">Increase</button>
+         <button onclick="makeSmall()" class="btn btn-primary">Small</button>
+         <button onclick="makeNormal()" class="btn btn-primary">Normal</button>
+      </div>
+</section>
+<footer id="pieDiv">
+  <div class="nav-footer">
+   <ul class="nav nav-content-center">
+        <li class="nav-item active">
+        	<a class="page-scroll" href="index-en#page-top.htm">Home</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="aboutme">
+        	<a class="page-scroll" href="index-en.htm#section-acerca">About</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="experiencia">
+        	<a class="page-scroll" href="index-en.htm#section-experiencia">Experience</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="portafolio">
+        	<a class="page-scroll" href="index-en.htm#section-portafolio">Portfolio</a>
+        </li>
+        <li class="nav-item" data-menu-module-id="contacto">
+        	<a class="page-scroll" href="index-en.htm#section-contacto">Contact</a>
+        </li>
+      </ul>
+  </div>
+  <div>                        Copyright © 2019 All rights reserved - <span class="website-name-preview-helper">Jessica Pastrana - Freelancer</span></div>
+     <div class="clearfix upgrade-website-preview-helper">Powered By <a target="_blank" href="">PaXtra</ a> - <a target="_blank" href="">Create a website</a></div>
+</footer>
+<script>
+$(document).ready(function(){
+  $('.item-images-porta-app').cycle({
+    fx: 'scrollLeft',
+	delay: -2000,
+	cleartypeNoBg: true
+  });
+});
+$(document).ready(function(){
+  $('.titulos-images').cycle({
+    fx: 'scrollDown',
+	delay: -2000,
+	cleartypeNoBg: true
+  });
+});
+</script>
+<script>
+var videoC = document.getElementById("myVideo");
+
+function playPause(){
+	if(videoC.paused)
+		videoC.play();
+	else
+		videoC.pause();
+}
+
+function makeBig(){
+	videoC.width = 600;
+}
+
+function makeSmall(){
+	videoC.width = 450;
+}
+
+function makeNormal(){
+	videoC.width = 550;
+}
+</script>
+</body>
+</html>
